@@ -1,0 +1,12 @@
+ ${AnsiColor.GREEN} 88               88             
+ ${AnsiColor.GREEN} ""               ""             
+                                 
+ ${AnsiColor.GREEN} 88   ,adPPYb,d8  88  ,adPPYYba, 
+ ${AnsiColor.GREEN} 88  a8"    `Y88  88  ""     `Y8 
+ ${AnsiColor.GREEN} 88  8b       88  88  ,adPPPPP88 
+ ${AnsiColor.GREEN} 88  "8a,   ,d88  88  88,    ,88 
+ ${AnsiColor.GREEN} 88   `"YbbdP"Y8  88  `"8bbdP"Y8 
+ ${AnsiColor.GREEN}      aa,    ,88                 
+ ${AnsiColor.GREEN}       "Y8bbdP"                  
+
+${AnsiColor.BRIGHT_BLUE}:: igia ::   v0.3.0.RELEASE

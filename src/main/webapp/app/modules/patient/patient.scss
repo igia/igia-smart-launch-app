@@ -1,0 +1,35 @@
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v.
+ * 2.0 with a Healthcare Disclaimer.
+ * A copy of the Mozilla Public License, v. 2.0 with the Healthcare Disclaimer can
+ * be found under the top level directory, named LICENSE.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at
+ * http://mozilla.org/MPL/2.0/.
+ * If a copy of the Healthcare Disclaimer was not distributed with this file, You
+ * can obtain one at the project website https://github.com/igia.
+ *
+ * Copyright (C) 2018-2019 Persistent Systems, Inc.
+ */
+@import '../../../static/partials/variables';
+
+.patientSearchHeader {
+  border-bottom: 1px solid $igia-border-color;
+  padding-bottom: 1rem;
+}
+
+.firstName-width {
+  width: 48%;
+  margin-right: 30px;
+}
+.lastName-width {
+  width: 47%;
+  margin-right: 0;
+}
+.searchButtonStyle {
+  background: $igia-primary-color;
+  border-color: $igia-primary-color;
+}
+.searchButtonStyle:hover {
+  background: $igia-background-color;
+  color: $igia-primary-color;
+}

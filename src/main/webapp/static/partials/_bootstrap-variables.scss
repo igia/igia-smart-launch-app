@@ -1,0 +1,35 @@
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v.
+ * 2.0 with a Healthcare Disclaimer.
+ * A copy of the Mozilla Public License, v. 2.0 with the Healthcare Disclaimer can
+ * be found under the top level directory, named LICENSE.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at
+ * http://mozilla.org/MPL/2.0/.
+ * If a copy of the Healthcare Disclaimer was not distributed with this file, You
+ * can obtain one at the project website https://github.com/igia.
+ *
+ * Copyright (C) 2018-2019 Persistent Systems, Inc.
+ */
+@import 'variables';
+
+// Bootstrap customization
+$brand-primary: $igia-primary-color !default;
+$nav-tabs-link-active-bg: $igia-data-bg-color !default;
+$bmd-nav-tabs-active-color: $igia-primary-color !default;
+$bmd-nav-tabs-color: $igia-table-header-color !default;
+$bmd-nav-tabs-pills-link-padding: 0.5rem !default;
+$bmd-nav-tabs-pills-font-size: $igia-secondary-size !default;
+$bmd-nav-tabs-pills-font-weight: $igia-font-weight-bold !default;
+$badge-font-size: 0.9em;
+
+// table styles
+$table-border-width: $igia-item-divider-width !default;
+$table-border-color: $igia-border-color;
+$gray: $igia-table-header-color !default;
+
+// list styles
+$list-group-border-width: $igia-item-divider-width;
+$list-group-border-color: $igia-border-color;
+
+// Dropdown styles
+$dropdown-link-hover-bg: $igia-primary-color;

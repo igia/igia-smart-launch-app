@@ -1,0 +1,56 @@
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v.
+ * 2.0 with a Healthcare Disclaimer.
+ * A copy of the Mozilla Public License, v. 2.0 with the Healthcare Disclaimer can
+ * be found under the top level directory, named LICENSE.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at
+ * http://mozilla.org/MPL/2.0/.
+ * If a copy of the Healthcare Disclaimer was not distributed with this file, You
+ * can obtain one at the project website https://github.com/igia.
+ *
+ * Copyright (C) 2018-2019 Persistent Systems, Inc.
+ */
+$igia-primary-color: #45b0a6;
+$igia-title-color: #008ab0;
+$igia-data-bg-color: #fff;
+$igia-secondary-color: #717171;
+$igia-text-color: #000000;
+$igia-table-header-color: #666666;
+$igia-border-color: #e6e6e6;
+$igia-background-color: #f2f2f2;
+$igia-header-background-color: #e9ecef;
+$igia-footer-color: #194457;
+
+$igia-navbar-title-size: 19px;
+$igia-header-size: 16px;
+$igia-primary-size: 13px;
+$igia-secondary-size: 12px;
+$igia-detail-size: 11px;
+
+$igia-primary-font-family: 'Roboto';
+$igia-secondary-font-family: 'Helvetica', 'Arial';
+$igia-font-family: $igia-primary-font-family, $igia-secondary-font-family;
+
+$igia-font-weight-regular: 400;
+$igia-font-weight-medium: 500;
+$igia-font-weight-bold: 700;
+
+$igia-font-style-italic: italic;
+
+$igia-label-color: $igia-secondary-color;
+$igia-label-size: $igia-primary-size;
+$igia-text-size: $igia-label-size;
+$igia-title-border-color: $igia-border-color;
+$igia-title-font-size: $igia-header-size;
+$igia-link-color: $igia-primary-color;
+$igia-secondary-text-color: $igia-label-color;
+$igia-inactive-tab-color: $igia-table-header-color;
+$igia-active-tab-color: $igia-primary-color;
+
+$igia-item-divider-width: 1px;
+
+$igia-font-color: $igia-data-bg-color;
+$igia-font-normal-color: $igia-text-color;
+$igia-navbar-color: $igia-data-bg-color;
+$igia-navbar-height: 57px;
+$igia-footer-height: 85px;

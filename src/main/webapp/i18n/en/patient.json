@@ -1,0 +1,31 @@
+{
+  "patient": {
+    "title": "Patient search",
+    "search": {
+      "labels": {
+        "search": "Search",
+        "mrn": "MRN",
+        "birthdate": "Date of birth",
+        "gender": "Gender",
+        "first": "First name",
+        "last": "Last name",
+        "select": "Select"
+      },
+      "messages": {
+        "invalidDate": "Invalid date selection",
+        "invalidInputs": "At least one of MRN, birthdate, or first and last name is required.",
+        "searching": "Searching for patients.",
+        "noResults": "No matching patients found.",
+        "error": "Error retrieving patient search results.",
+        "errorTokenExpired": "Error retrieving patient search results. Your authorization session has expired. Please close this window and relaunch your application.",
+        "errorSelect": "Error redirecting with selected patient."
+      },
+      "gender": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other",
+        "unknown": "Unknown"
+      }
+    }
+  }
+}

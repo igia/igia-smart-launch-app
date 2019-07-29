@@ -1,0 +1,173 @@
+{
+  "resourceType": "CapabilityStatement",
+  "status": "active",
+  "date": "2019-03-20T20:17:07+00:00",
+  "publisher": "Not provided",
+  "kind": "instance",
+  "software": {
+    "name": "HAPI FHIR Server",
+    "version": "3.6.0"
+  },
+  "implementation": {
+    "description": "HAPI FHIR",
+    "url": "/api/*"
+  },
+  "fhirVersion": "3.0.1",
+  "acceptUnknown": "extensions",
+  "format": ["application/fhir+xml", "application/fhir+json"],
+  "rest": [
+    {
+      "mode": "server",
+      "security": {
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris",
+            "extension": [
+              {
+                "url": "authorize",
+                "valueUri": "http://keycloak:9080/auth/realms/igia/protocol/openid-connect/auth"
+              },
+              {
+                "url": "token",
+                "valueUri": "http://keycloak:9080/auth/realms/igia/protocol/smart-openid-connect/token"
+              },
+              {
+                "url": "register",
+                "valueUri": "http://keycloak:9080/auth/realms/igia/clients-registrations/openid-connect"
+              },
+              {
+                "url": "launch-registration"
+              }
+            ]
+          },
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/capabilities",
+            "valueCode": "launch-standalone"
+          },
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/capabilities",
+            "valueCode": "client-public"
+          },
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/capabilities",
+            "valueCode": "client-confidential-symmetric"
+          },
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/capabilities",
+            "valueCode": "sso-openid-connect"
+          },
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/capabilities",
+            "valueCode": "context-standalone-patient"
+          },
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/capabilities",
+            "valueCode": "permission-patient"
+          },
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/capabilities",
+            "valueCode": "permission-offline"
+          }
+        ],
+        "service": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/restful-security-service",
+                "code": "SMART-on-FHIR",
+                "display": "SMART-on-FHIR"
+              }
+            ],
+            "text": "OAuth2 using SMART-on-FHIR profile (see http://docs.smarthealthit.org)"
+          }
+        ]
+      },
+      "resource": [
+        {
+          "type": "Observation",
+          "profile": {
+            "reference": "http://hl7.org/fhir/StructureDefinition/Observation"
+          },
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "patient",
+              "type": "reference",
+              "documentation": "The subject that the observation is about (if patient)"
+            }
+          ]
+        },
+        {
+          "type": "OperationDefinition",
+          "profile": {
+            "reference": "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            }
+          ]
+        },
+        {
+          "type": "Patient",
+          "profile": {
+            "reference": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "birthdate",
+              "type": "date",
+              "documentation": "The patient's date of birth"
+            },
+            {
+              "name": "family",
+              "type": "string",
+              "documentation": "A portion of the family name of the patient"
+            },
+            {
+              "name": "gender",
+              "type": "token",
+              "documentation": "Gender of the patient"
+            },
+            {
+              "name": "given",
+              "type": "string",
+              "documentation": "A portion of the given name of the patient"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "A patient identifier"
+            }
+          ]
+        },
+        {
+          "type": "StructureDefinition",
+          "profile": {
+            "reference": "http://hl7.org/fhir/StructureDefinition/StructureDefinition"
+          },
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

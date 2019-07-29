@@ -1,0 +1,43 @@
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v.
+ * 2.0 with a Healthcare Disclaimer.
+ * A copy of the Mozilla Public License, v. 2.0 with the Healthcare Disclaimer can
+ * be found under the top level directory, named LICENSE.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at
+ * http://mozilla.org/MPL/2.0/.
+ * If a copy of the Healthcare Disclaimer was not distributed with this file, You
+ * can obtain one at the project website https://github.com/igia.
+ *
+ * Copyright (C) 2018-2019 Persistent Systems, Inc.
+ */
+/* ==========================================================================
+Developement Ribbon
+========================================================================== */
+.ribbon {
+  background-color: rgba(170, 0, 0, 0.5);
+  left: -3.5em;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  overflow: hidden;
+  position: fixed;
+  top: 35px;
+  white-space: nowrap;
+  width: 15em;
+  z-index: 99999;
+  pointer-events: none;
+  opacity: 0.75;
+  a {
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    margin: 1px 0;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 5px #444;
+    pointer-events: none;
+  }
+}
