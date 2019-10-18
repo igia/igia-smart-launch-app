@@ -18,7 +18,7 @@
 
     <groupId>io.igia</groupId>
     <artifactId>igia-smart-launch-app</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.2</version>
     <packaging>war</packaging>
     <name>igia-smart-launch-app</name>
 
