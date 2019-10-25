@@ -143,10 +143,8 @@ public class PatientService {
 	private boolean isTrustedRedirectUrl(String tokenUrl) throws MalformedURLException, UnsupportedEncodingException {
 		URL url = new URL(URLDecoder.decode(tokenUrl, "UTF-8"));
 		for(TrustedRedirect trusted : properties.getTrustedRedirects()){
-			if(trusted.getHost().equalsIgnoreCase(url.getHost())) {
-				if(trusted.getPort() == url.getPort()) {
-					return true;
-				}
+			if(trusted.getHost().equalsIgnoreCase(url.getHost()) && trusted.getPort() == url.getPort()) {
+			    return true;
 			}
 		}
 		
