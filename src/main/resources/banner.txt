@@ -9,4 +9,4 @@
  ${AnsiColor.GREEN}      aa,    ,88                 
  ${AnsiColor.GREEN}       "Y8bbdP"                  
 
-${AnsiColor.BRIGHT_BLUE}:: igia ::   v0.3.2.RELEASE
+${AnsiColor.BRIGHT_BLUE}:: igia ::   v0.3.3.RELEASE
