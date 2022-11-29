@@ -30,7 +30,7 @@
 
     <properties>
         <hapi.fhir.version>3.6.0</hapi.fhir.version>
-        <version.keycloak>4.5.0.Final</version.keycloak>
+        <version.keycloak>20.0.0</version.keycloak>
             
         <!-- Build properties -->
         <maven.version>3.0.0</maven.version>
